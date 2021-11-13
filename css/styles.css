@@ -1,0 +1,333 @@
+:root {
+  --main-title-color: #212121;
+  --main-text-color: #757575;
+  --header-text-color: #212121;
+  --second-header-color: #757575;
+  --first-button-color: #ffffff;
+  --accent-color: #2196f3;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* --------------INDEX.HTML----------- */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-title-color);
+  background-color: #ffffff;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* --------------HEADER----------- */
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
+.header-logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  color: var(--accent-color);
+}
+.header-logo-color {
+  color: #000000;
+}
+.header-logo-color:hover,
+.header-logo-color:focus {
+  color: var(--accent-color);
+}
+.header-item {
+  margin-right: 50px;
+}
+.header-item:last-child {
+  margin-right: 0;
+}
+.header-list {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+}
+.header-info-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-text-color);
+}
+.header-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-header-color);
+}
+.header-info-item {
+  margin-right: 50px;
+}
+.header-info-item:last-child {
+  margin-right: 0;
+}
+.header-info:focus,
+.header-info:hover,
+.header-link:focus,
+.header-link:hover,
+.current {
+  color: var(--accent-color);
+}
+/* --------------MAIN----------- */
+/* --------------FIRST SECTION----------- */
+
+.introduction {
+  background-color: #2f303a;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.introduction-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 696px;
+  color: #ffffff;
+}
+.introduction-btn {
+  display: block;
+  padding: 10px 32px;
+  margin: auto;
+
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--first-button-color);
+  background-color: var(--accent-color);
+}
+/* --------------SECONT SECTION----------- */
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-item {
+  width: 270px;
+}
+
+.benefits-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.benefits-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-text-color);
+}
+
+/* --------------THIRD SECTION----------- */
+.ocupation-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--main-title-color);
+}
+
+.ocupation-list {
+  display: flex;
+}
+.ocupation-item {
+  margin-right: 30px;
+}
+.ocupation-item:last-child {
+  margin-right: 0;
+}
+/* --------------FOURTH SECTION----------- */
+.team {
+  background-color: #f5f4fa;
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-title-color);
+}
+.team-names {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-title-color);
+}
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+/* --------------FOOTER----------- */
+.ending {
+  background: #2f303a;
+}
+.header-logo-footer {
+  color: #ffffff;
+}
+.header-logo-footer:hover,
+.header-logo-footer:focus {
+  color: var(--accent-color);
+}
+.ending-adress {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.ending-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* -------------------------------  PORTFOLIO------------------------------ */
+.header-logo-second {
+  color: #ffffff;
+}
+.selection-btn {
+  border: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  color: #212121;
+  cursor: pointer;
+}
+.selection-btn:hover,
+.selection-btn:focus,
+.btn-current {
+  color: var(--first-button-color);
+  background: #2196f3;
+  /* shadow-middle */
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.selection-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--main-title-color);
+}
+.selection-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
